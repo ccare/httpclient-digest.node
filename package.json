@@ -1,0 +1,30 @@
+{
+    "name": "httpclient-digest"
+  , "version": "0.0.1"
+  , "description": "Very basic implementation of an http client that supports digest auth. The client trys to present the same apis as the standard client commands availabling in the standard Node.js 'http' package."
+  , "author": "Charles Care <cpc@talis.com>"
+  , "contributors": [
+        { "name": "Charles Care", "email": "cpc@talis.com" }
+    ]
+  , "repository":{
+        "type": "git"
+      , "url": "https://github.com/talis/httpclient-digest.node.git"
+    }
+  , "dependencies": {
+	"lazy": "1.0.7",
+	"hashlib": "1.0.1",
+	"memstream": "0.0.1"
+    }
+  , "devDependencies": {
+	  "expresso": "0.9.0",
+	  "nodemock": "0.2.14"
+    }
+  , "main": "./lib/httpclientDigest"
+  , "engines": { "node": ">= 0.4.0" }
+  , "scripts" : {
+        "test" : "expresso -I lib",
+        "coverage" : "rm -r lib-cov; jscoverage lib lib-cov && expresso -I lib-cov"
+    }
+}
+
+
