@@ -4,8 +4,15 @@ exports.testFormatNonceCount = function(beforeExit, assert) {
     assert.equal("00000000", digestUtils.formatNonceCount(0))
     assert.equal("00000001", digestUtils.formatNonceCount(1))
     assert.equal("00000002", digestUtils.formatNonceCount(2))
-    //assert.equal("00010000", digestUtils.formatNonceCount(10000))
-    //assert.equal("99999999", digestUtils.formatNonceCount(99999999))
+    assert.equal("00000009", digestUtils.formatNonceCount(9))
+    // nc is in hex
+    assert.equal("0000000a", digestUtils.formatNonceCount(10))
+    assert.equal("0000000b", digestUtils.formatNonceCount(11))
+    assert.equal("0000000c", digestUtils.formatNonceCount(12))
+    assert.equal("0000000d", digestUtils.formatNonceCount(13))
+    assert.equal("0000000e", digestUtils.formatNonceCount(14))
+    assert.equal("0000000f", digestUtils.formatNonceCount(15))
+    assert.equal("00000010", digestUtils.formatNonceCount(16))
 }
 
 exports.testBuildA1 = function(beforeExit, assert) {
