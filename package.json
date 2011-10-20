@@ -11,7 +11,6 @@
       , "url": "https://github.com/talis/httpclient-digest.node.git"
     }
   , "dependencies": {
-	"lazy": "1.0.7",
 	"hashlib": "1.0.1",
 	"memstream": "0.0.1"
     }
