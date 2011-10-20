@@ -1,6 +1,6 @@
 {
     "name": "httpclient-digest"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "Very basic implementation of an http client that supports digest auth. The client trys to present the same apis as the standard client commands availabling in the standard Node.js 'http' package."
   , "author": "Charles Care <cpc@talis.com>"
   , "contributors": [
